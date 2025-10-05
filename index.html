@@ -1,260 +1,56 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <script src="https://fpyf8.com/88/tag.min.js" data-zone="174929" async data-cfasync="false"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GKH VIDEO</title>
-  <style>
-    body {
-      background: #18191a;
-      font-family: Arial, sans-serif;
-      color: #e4e6eb;
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-    }
-    .post {
-      background: #242526;
-      border-radius: 10px;
-      max-width: 600px;
-      width: 100%;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-    }
-    .post-header {
-      display: flex;
-      align-items: center;
-      padding: 10px 15px;
-    }
-    .post-header img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-    .post-header .info {
-      display: flex;
-      flex-direction: column;
-    }
-    .post-header .name {
-      font-weight: bold;
-      color: #e4e6eb;
-    }
-    .post-header .hashtag {
-      color: #1877f2;
-      font-size: 13px;
-    }
-    .video-container {
-      position: relative;
-    }
-    video {
-      width: 100%;
-      border-radius: 10px 10px 0 0;
-    }
-    .live-badge {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background: red;
-      color: white;
-      font-weight: bold;
-      font-size: 14px;
-      padding: 4px 8px;
-      border-radius: 4px;
-    }
-    .watching {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: rgba(0,0,0,0.7);
-      color: #fff;
-      font-size: 13px;
-      padding: 4px 8px;
-      border-radius: 4px;
-    }
-    .stats {
-      padding: 10px 15px;
-      border-bottom: 1px solid #3a3b3c;
-      display: flex;
-      justify-content: space-between;
-      font-size: 14px;
-      color: #b0b3b8;
-    }
-    .actions {
-      display: flex;
-      justify-content: space-around;
-      padding: 10px;
-      border-top: 1px solid #3a3b3c;
-    }
-    .action-btn {
-      flex: 1;
-      text-align: center;
-      color: #b0b3b8;
-      font-weight: bold;
-      padding: 8px 0;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .action-btn:hover {
-      background: #3a3b3c;
-    }
-    /* Ads Section Styling */
-    .banner-ads {
-      margin: 15px auto;
-      text-align: center;
-      max-width: 100%;
-    }
-    .banner-ads .ad-box {
-      margin: 10px 0; /* equal spacing between ads */
-    }
-    .banner-ads iframe {
-      max-width: 100% !important;
-      height: auto !important;
-    }
-  </style>
-</head>
-<body>
-  <div class="post">
-    <!-- Profile Header -->
-    <div class="post-header">
-      <img src="https://i.pravatar.cc/100?img=15" alt="Profile" id="profilePic">
-      <div class="info">
-        <div class="name" id="profileName"></div>
-      </div>
-    </div>
+<html lang="en" style="background: #fafafa" data-head-attrs="lang,style" lang="en">
+  <head>
+    <script type="module" crossorigin src="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/polyfills-f83178a1.js"></script>
 
-    <!-- Video Section -->
-    <div class="video-container">
-      <video autoplay muted controls id="postVideo"></video>
-      <div class="live-badge">🔴 LIVE</div>
-      <div class="watching" id="watchingCount">12.4k watching</div>
-    </div>
+    <script>window.__BSTAR__METADATA__={version:"1.47.0-beta02"}</script>
 
-    <!-- Stats -->
-    <div class="stats">
-      <span id="viewCount">27.8m views</span>
-      <span>Like 1.1k · 1.9k comments · 990 shares</span>
-    </div>
-
-    <!-- Action Buttons -->
-    <div class="actions">
-      <div class="action-btn">👍 Like</div>
-      <div class="action-btn">💬 Comment</div>
-      <div class="action-btn">↗️ Share</div>
-    </div>
-
-    <!-- Ads Section -->
-    <div class="banner-ads">
-      <!-- First Ad -->
-      <div class="ad-box">
-        <script type="text/javascript">
-          atOptions = {
-            'key' : '340c1858bb6c862839ad7387fdd2a2be',
-            'format' : 'iframe',
-            'height' : 50,
-            'width' : 320,
-            'params' : {}
-          };
-        </script>
-        <script type="text/javascript" src="//embarrasspiled.com/340c1858bb6c862839ad7387fdd2a2be/invoke.js"></script>
-      </div>
-
-      <!-- Second Ad -->
-      <div class="ad-box">
-        <script id="_wausmw">
-          var _wau = _wau || [];
-          _wau.push(["dynamic", "27vrvb2j55", "smw", "c4302bffffff", "small"]);
-        </script>
-        <script async src="//waust.at/d.js"></script>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const videos = [
-      "https://qu.ax/qxLVh.mp4",
-      "https://qu.ax/sBvSM.mp4",
-      "https://qu.ax/EGdnh.mp4",
-      "https://qu.ax/NpsMB.mp4",
-      "https://cdn.videy.co/K8kWbWCq1.mp4",
-      "https://qu.ax/vYUk.mp4",
-      "https://qu.ax/iGdV.mp4",
-      "https://cdn.videy.co/vpBBLXzT1.mp4",
-      "https://qu.ax/yJbCp.mp4",
-      "https://qu.ax/SdlSD.mp4",
-      "https://qu.ax/DMMVh.mp4",
-      "https://qu.ax/gTBXq.mp4",
-      "https://cdn.videy.co/tVvaoVcB1.mp4",
-      "https://qu.ax/HlosW.mp4",
-      "https://cdn.videy.co/nAhPTvTW1.mp4",
-      "https://qu.ax/Xofyh.mp4",
-      "https://qu.ax/UmxNH.mp4",
-      "https://cdn.videy.co/H90oryEY1.mp4",
-      "https://cdn.videy.co/FrBE0tgT1.mp4",
-      "https://cdn.videy.co/3dv7ecu61.mp4",
-      "https://qu.ax/BRyRr.mp4",
-      "https://cdn.videy.co/HTb5kQDc.mp4",
-      "https://cdn.videy.co/1bZLoX2v.mp4",
-      "https://cdn.videy.co/qDk9IsxJ1.mp4",
-      "https://cdn.videy.co/5mLg1YVL1.mp4",
-      "https://cdn.videy.co/XzmMWuVF1.mp4",
-      "https://cdn.videy.co/qCHvjIcZ1.mp4",
-      "https://cdn.videy.co/njUMw6C31.mp4",
-      "https://cdn.videy.co/7DPCEq1T1.mp4",
-      "https://cdn.videy.co/qM8IkUGE1.mp4",
-      "https://cdn.videy.co/QTuFZGx71.mp4",
-      "https://cdn.videy.co/QmZsrbub1.mp4",
-      "https://cdn.videy.co/xs41BdjZ1.mp4",
-      "https://cdn.videy.co/KeNLiIqr1.mp4",
-      "https://cdn.videy.co/LqynMFKh1.mp4",
-      "https://cdn.videy.co/eOeSwapA1.mp4",
-      "https://cdn.videy.co/9z3Kcjag1.mp4",
-      "https://cdn.videy.co/7mBbU9Mp1.mp4",
-      "https://cdn.videy.co/VG12gGft1.mp4",
-      "https://cdn.videy.co/gwBNXdrM1.mp4",
-      "https://cdn.videy.co/Fe2zecvy1.mp4",
-      "https://cdn.videy.co/jWKat65c1.mp4",
-      "https://cdn.videy.co/ISfJ5Dm11.mp4",
-      "https://cdn.videy.co/l2qdfPCl1.mp4",
-      "https://cdn.videy.co/Pte1yJEG1.mp4",
-      "https://cdn.videy.co/je21eMb31.mp4",
-      "https://cdn.videy.co/dNUHPZ0g1.mp4",
-      "https://cdn.videy.co/envb4PHm1.mp4",
-      "https://cdn.videy.co/1E1PyiNO1.mp4",
-      "https://cdn.videy.co/K3GuuKlm1.mp4",
-      "https://cdn.videy.co/SAxR1ptf1.mp4",
-      "https://cdn.videy.co/5khzXu7v1.mp4",
-      "https://cdn.videy.co/MZVrXBLY1.mp4",
-      "https://cdn.videy.co/YSxsvYJY1.mp4",
-      "https://cdn.videy.co/N8uFgksK1.mp4",
-    ];
-
-    const names = [
-      "Ali Khan", "Sara Malik", "John Doe", "Ayesha Noor",
-      "Hassan Raza", "Fatima Sheikh", "David Smith",
-      "Emma Johnson", "Omar Farooq", "Sophia Lee"
-    ];
-
-    // Random video
-    const videoElement = document.getElementById("postVideo");
-    const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-    videoElement.src = randomVideo;
-
-    // Redirect after video ends
-    videoElement.addEventListener("ended", function() {
-      window.location.href = "https://embarrasspiled.com/rqbamyp64c?key=866bc5ba1e525b6c9b55bb8d072f8b91";
-    });
-
-    // Random watching count
-    const watchingElement = document.getElementById("watchingCount");
-    const randomWatching = (Math.random() * (50 - 5) + 5).toFixed(1);
-    watchingElement.innerText = `${randomWatching}k watching`;
-
-    // Random profile name
-    const profileNameElement = document.getElementById("profileName");
-    const randomName = names[Math.floor(Math.random() * names.length)];
-    profileNameElement.innerText = randomName;
-  </script>
-</body>
+    <meta charset="UTF-8" />
+    <meta name="spm_prefix" content="0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <title>BiliBili</title><meta name="keywords" content="BiliBili,BiliBili,free anime,anime,Top Anime,BL,GL,cosplay,SubThai"><meta name="description" content="BiliBili, Southeast Asia\'s leading anime, comics, and games (ACG) community where people can create, watch and share engaging videos."><link rel="canonical" href="https://www.bilibili.tv/en"><link rel="alternate" href="https://www.bilibili.tv/en/" hreflang="en"><link rel="alternate" href="https://www.bilibili.tv/th/" hreflang="th-th"><link rel="alternate" href="https://www.bilibili.tv/vi/" hreflang="vi-vn"><link rel="alternate" href="https://www.bilibili.tv/id/" hreflang="id-id"><link rel="alternate" href="https://www.bilibili.tv/ms/" hreflang="ms-my"><link rel="alternate" href="https://www.bilibili.tv/ar/" hreflang="ar"><script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","url":"https://www.bilibili.tv","logo":"https://p.bstarstatic.com/fe-static/bstar-web/assets/top_logo.svg"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"BiliBili"}]}]</script><meta property="og:type" content="website"><meta property="og:title" content="BiliBili"><meta property="og:image" content="https://p.bstarstatic.com/fe-lib/images/web/share-cover.png@1200w_630h_1e_1c_1f.webp"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:description" content="BiliBili, Southeast Asia's leading anime, comics, and games (ACG) community where people can create, watch and share engaging videos."><meta property="og:url" content="https://www.bilibili.tv/en"><link rel="apple-touch-icon" href="https://p.bstarstatic.com/fe-lib/images/web/share-cover.png@1200w_630h_1e_1c_1f.webp"><meta name="head:count" content="18">
+    <link rel="preconnect" href="//p.bstarstatic.com/" crossorigin>
+    <link rel="dns-prefetch" href="//pic.bstarstatic.com/" crossorigin>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="//p.bstarstatic.com/fe-static/deps/bilibili_tv.ico?v=1">
+    <!-- <link rel="preload" href="//p.bstarstatic.com/fe-lib/player/NotoSans-DroidSansThai_Bold.woff2" as="font" type="font/woff2" crossorigin> -->
+    <!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script> -->
+    <link rel="stylesheet" href="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/index-42b445ca.css">
+    <!-- Google Tag Manager -->
+    <!-- <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PT9X55H');
+    </script> -->
+    <!-- End Google Tag Manager -->
+    <script type="module" crossorigin src="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/index-34598109.js"></script>
+    <link rel="modulepreload" crossorigin href="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/log-report-9de161c1.js">
+    
+    <link rel="modulepreload" crossorigin href="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/alife-logger-e16748d0.js">
+    
+    
+    
+    <link rel="modulepreload" crossorigin href="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/vendor-e3e21409.js">
+    <link rel="modulepreload" crossorigin href="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/intlify-2b8392d8.js">
+    <link rel="modulepreload" crossorigin href="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/i18n-b090cad2.js">
+    <link rel="stylesheet" href="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/index-e90e713f.css">
+    <script type="module">import.meta.url;import("_").catch(()=>1);async function* g(){};if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+  <body data-head-attrs="">
+    <div id="app"><!--[--><div class="bstar-web"><div class="layout layout-grey" style="--3d5f1d00:100vh - 82px - 0px;" data-v-fa378d43><span data-v-fa378d43></span><section class="layout__body" data-v-fa378d43><span data-v-fa378d43></span><main class="layout__content" data-v-fa378d43><div class="max-container" data-v-fa378d43 data-v-f7d052b0 data-v-fc7a5b79><!--[--><div class="home" data-v-f7d052b0><section class="card-section" data-v-f7d052b0 data-v-e09782c8><!--[--><div class="card-section--skeleton-header" data-v-e09782c8><div class="card-section--skeleton__title" data-v-e09782c8></div><!--[--><div class="card-section--skeleton__more" data-v-e09782c8></div><!--]--></div><!--]--><ul class="section__list section__list--two section__list--column" data-v-e09782c8><!--[--><li class="section__list__item" data-v-e09782c8><div class="bstar-video-card-skeleton bstar-video-card-skeleton--row bstar-video-card-skeleton--ugc" style="grid-template-columns:auto;width:auto;" data-v-e09782c8><div class="bstar-video-card-skeleton__cover" style=""></div><div class="bstar-video-card-skeleton__text-warp"><div class="bstar-video-card-skeleton__avatar"></div><div class="bstar-video-card-skeleton__text-content"><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div></div></div></div></li><li class="section__list__item" data-v-e09782c8><div class="bstar-video-card-skeleton bstar-video-card-skeleton--row bstar-video-card-skeleton--ugc" style="grid-template-columns:auto;width:auto;" data-v-e09782c8><div class="bstar-video-card-skeleton__cover" style=""></div><div class="bstar-video-card-skeleton__text-warp"><div class="bstar-video-card-skeleton__avatar"></div><div class="bstar-video-card-skeleton__text-content"><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div></div></div></div></li><li class="section__list__item" data-v-e09782c8><div class="bstar-video-card-skeleton bstar-video-card-skeleton--row bstar-video-card-skeleton--ugc" style="grid-template-columns:auto;width:auto;" data-v-e09782c8><div class="bstar-video-card-skeleton__cover" style=""></div><div class="bstar-video-card-skeleton__text-warp"><div class="bstar-video-card-skeleton__avatar"></div><div class="bstar-video-card-skeleton__text-content"><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div></div></div></div></li><li class="section__list__item" data-v-e09782c8><div class="bstar-video-card-skeleton bstar-video-card-skeleton--row bstar-video-card-skeleton--ugc" style="grid-template-columns:auto;width:auto;" data-v-e09782c8><div class="bstar-video-card-skeleton__cover" style=""></div><div class="bstar-video-card-skeleton__text-warp"><div class="bstar-video-card-skeleton__avatar"></div><div class="bstar-video-card-skeleton__text-content"><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div></div></div></div></li><li class="section__list__item" data-v-e09782c8><div class="bstar-video-card-skeleton bstar-video-card-skeleton--row bstar-video-card-skeleton--ugc" style="grid-template-columns:auto;width:auto;" data-v-e09782c8><div class="bstar-video-card-skeleton__cover" style=""></div><div class="bstar-video-card-skeleton__text-warp"><div class="bstar-video-card-skeleton__avatar"></div><div class="bstar-video-card-skeleton__text-content"><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div></div></div></div></li><li class="section__list__item" data-v-e09782c8><div class="bstar-video-card-skeleton bstar-video-card-skeleton--row bstar-video-card-skeleton--ugc" style="grid-template-columns:auto;width:auto;" data-v-e09782c8><div class="bstar-video-card-skeleton__cover" style=""></div><div class="bstar-video-card-skeleton__text-warp"><div class="bstar-video-card-skeleton__avatar"></div><div class="bstar-video-card-skeleton__text-content"><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div></div></div></div></li><li class="section__list__item" data-v-e09782c8><div class="bstar-video-card-skeleton bstar-video-card-skeleton--row bstar-video-card-skeleton--ugc" style="grid-template-columns:auto;width:auto;" data-v-e09782c8><div class="bstar-video-card-skeleton__cover" style=""></div><div class="bstar-video-card-skeleton__text-warp"><div class="bstar-video-card-skeleton__avatar"></div><div class="bstar-video-card-skeleton__text-content"><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div></div></div></div></li><li class="section__list__item" data-v-e09782c8><div class="bstar-video-card-skeleton bstar-video-card-skeleton--row bstar-video-card-skeleton--ugc" style="grid-template-columns:auto;width:auto;" data-v-e09782c8><div class="bstar-video-card-skeleton__cover" style=""></div><div class="bstar-video-card-skeleton__text-warp"><div class="bstar-video-card-skeleton__avatar"></div><div class="bstar-video-card-skeleton__text-content"><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div></div></div></div></li><li class="section__list__item" data-v-e09782c8><div class="bstar-video-card-skeleton bstar-video-card-skeleton--row bstar-video-card-skeleton--ugc" style="grid-template-columns:auto;width:auto;" data-v-e09782c8><div class="bstar-video-card-skeleton__cover" style=""></div><div class="bstar-video-card-skeleton__text-warp"><div class="bstar-video-card-skeleton__avatar"></div><div class="bstar-video-card-skeleton__text-content"><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div></div></div></div></li><li class="section__list__item" data-v-e09782c8><div class="bstar-video-card-skeleton bstar-video-card-skeleton--row bstar-video-card-skeleton--ugc" style="grid-template-columns:auto;width:auto;" data-v-e09782c8><div class="bstar-video-card-skeleton__cover" style=""></div><div class="bstar-video-card-skeleton__text-warp"><div class="bstar-video-card-skeleton__avatar"></div><div class="bstar-video-card-skeleton__text-content"><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div><div class="bstar-video-card-skeleton__text"></div></div></div></div></li><!--]--></ul><!----><!--[--><!--]--></section><section class="card-section card-section--single anime-timeline" data-v-f7d052b0 data-v-87d3db44 data-v-e09782c8><!--[--><div class="section-title" style="" data-v-e09782c8 data-v-0eeb64dd><h3 class="section-title__text" data-v-0eeb64dd><!--[-->Anime<!--]--></h3><!--[--><!--[--><div class="scroll-container anime-timeline__subtitle" data-v-87d3db44 style="--073e4c66:0px;" data-v-4f24bb42><div class="scroll-container__left" data-v-4f24bb42><!----><div class="scroll-container__content" data-v-4f24bb42><ul class="scroll-container__tab" data-v-4f24bb42><!--[--><li class="scroll-container__item scroll-container__item--active" data-v-4f24bb42>Trending</li><li class="scroll-container__item" data-v-4f24bb42>THU</li><li class="scroll-container__item" data-v-4f24bb42>FRI</li><li class="scroll-container__item" data-v-4f24bb42>SAT</li><li class="scroll-container__item scroll-container__item--bold" data-v-4f24bb42>SUN</li><li class="scroll-container__item" data-v-4f24bb42>MON</li><li class="scroll-container__item" data-v-4f24bb42>TUE</li><li class="scroll-container__item" data-v-4f24bb42>WED</li><!--]--></ul></div><!----></div><a href="/en/timeline" class="scroll-container__right" data-v-4f24bb42><img class="scroll-container__entry" src="https://p.bstarstatic.com/fe-lib/images/web/schedule/calendar-en.png@316w_72h_1e_1c_1f.webp" alt="calendar" data-v-4f24bb42></a></div><!--]--><!--]--></div><!--]--><div class="scroll-wrap" data-v-e09782c8 style="--23d49166:0px;" data-v-66da88fd><ul class="scroll-wrap__list" data-v-66da88fd><!--[--><li class="scroll-wrap__list__item" data-v-66da88fd><div class="bstar-video-card bstar-video-card--row bstar-video-card--ogv" style="" data-v-66da88fd><div class="bstar-video-card__cover-wrap"><div class="bstar-video-card__cover bstar-video-card__cover--normal" style=""><a href="//www.bilibili.tv/en/play/36571?bstar_from=bstar-web.homepage.anime.all" target="_blank" class="bstar-video-card__cover-link"><picture class="bstar-image bstar-video-card__cover-img"><!----><source srcset="https://pic.bstarstatic.com/ogv/13ca8ef83d38aef13dad0e2cf537ad2f358c890d.png@720w_405h_1e_1c_90q.webp" type="image/webp"><img class="bstar-image__img" src="https://pic.bstarstatic.com/ogv/13ca8ef83d38aef13dad0e2cf537ad2f358c890d.png@720w_405h_1e_1c_90q" alt="A Record Of  Mortal&#39;s Journey To Immortality" loading="lazy"></picture></a><!--[--><div class="bstar-video-card__cover-mask"><span class="bstar-video-card__cover-mask-text bstar-video-card__cover-mask-text--bold">Update to EP 162</span><!----></div><!--]--><!----><!----><!----></div><!----></div><div class="bstar-video-card__text-wrap"><div class="bstar-video-card__text bstar-video-card__text--row"><!----><div class="bstar-video-card__text-content"><!--[--><!--[--><p class="bstar-video-card__title bstar-video-card__title--normal bstar-video-card__title--bold"><a class="bstar-video-card__title-text" href="//www.bilibili.tv/en/play/36571?bstar_from=bstar-web.homepage.anime.all" target="_blank" style="--titleMaxLines:2;">A Record Of  Mortal&#39;s Journey To Immortality</a><!----></p><!--]--><!--]--><!--[--><div class="bstar-video-card__text-desc desc"><!----><!----><p class="bstar-video-card__desc bstar-video-card__desc--normal" style="--descMaxLines:2;"><!--[-->39.3M Views · Novel adaptation / Hot-blooded<!--]--></p></div><!----><!--]--></div></div></div></div></li><li class="scroll-wrap__list__item" data-v-66da88fd><div class="bstar-video-card bstar-video-card--row bstar-video-card--ogv" style="" data-v-66da88fd><div class="bstar-video-card__cover-wrap"><div class="bstar-video-card__cover bstar-video-card__cover--normal" style=""><a href="//www.bilibili.tv/en/play/1066507?bstar_from=bstar-web.homepage.anime.all" target="_blank" class="bstar-video-card__cover-link"><picture class="bstar-image bstar-video-card__cover-img"><!----><source srcset="https://pic.bstarstatic.com/ogv/0293ea8f35e1751e31bbe1579f3494bbeb7840ce.png@720w_405h_1e_1c_90q.webp" type="image/webp"><img class="bstar-image__img" src="https://pic.bstarstatic.com/ogv/0293ea8f35e1751e31bbe1579f3494bbeb7840ce.png@720w_405h_1e_1c_90q" alt="The Eminence in Shadow" loading="lazy"></picture></a><!--[--><div class="bstar-video-card__cover-mask"><span class="bstar-video-card__cover-mask-text bstar-video-card__cover-mask-text--bold">Full</span><!----></div><!--]--><span class="video-card__cover-label video-card__cover-label--normal video-card__cover-label--type-text" style="background-color:#06B6F2;" data-v-507ba1c0><!--[--><!----><span class="video-card__cover-label--text" data-v-507ba1c0>BiliBili only</span><!--]--></span><!----><!----></div><!----></div><div class="bstar-video-card__text-wrap"><div class="bstar-video-card__text bstar-video-card__text--row"><!----><div class="bstar-video-card__text-content"><!--[--><!--[--><p class="bstar-video-card__title bstar-video-card__title--normal bstar-video-card__title--bold"><a class="bstar-video-card__title-text" href="//www.bilibili.tv/en/play/1066507?bstar_from=bstar-web.homepage.anime.all" target="_blank" style="--titleMaxLines:2;">The Eminence in Shadow</a><!----></p><!--]--><!--]--><!--[--><div class="bstar-video-card__text-desc desc"><!----><!----><p class="bstar-video-card__desc bstar-video-card__desc--normal" style="--descMaxLines:2;"><!--[-->72.6M Views · Novel adaptation / Hot-blooded<!--]--></p></div><!----><!--]--></div></div></div></div></li><li class="scroll-wrap__list__item" data-v-66da88fd><div class="bstar-video-card bstar-video-card--row bstar-video-card--ogv" style="" data-v-66da88fd><div class="bstar-video-card__cover-wrap"><div class="bstar-video-card__cover bstar-video-card__cover--normal" style=""><a href="//www.bilibili.tv/en/play/34695?bstar_from=bstar-web.homepage.anime.all" target="_blank" class="bstar-video-card__cover-link"><picture class="bstar-image bstar-video-card__cover-img"><!----><source srcset="https://pic.bstarstatic.com/ogv/35a6ac1bb62f81988959fcbcb31a76895350ab5f.png@720w_405h_1e_1c_90q.webp" type="image/webp"><img class="bstar-image__img" src="https://pic.bstarstatic.com/ogv/35a6ac1bb62f81988959fcbcb31a76895350ab5f.png@720w_405h_1e_1c_90q" alt="The Daily Life of the Immortal King " loading="lazy"></picture></a><!--[--><div class="bstar-video-card__cover-mask"><span class="bstar-video-card__cover-mask-text bstar-video-card__cover-mask-text--bold">Full</span><!----></div><!--]--><span class="video-card__cover-label video-card__cover-label--normal video-card__cover-label--type-text" style="background-color:#06B6F2;" data-v-507ba1c0><!--[--><!----><span class="video-card__cover-label--text" data-v-507ba1c0>BiliBili only</span><!--]--></span><!----><!----></div><!----></div><div class="bstar-video-card__text-wrap"><div class="bstar-video-card__text bstar-video-card__text--row"><!----><div class="bstar-video-card__text-content"><!--[--><!--[--><p class="bstar-video-card__title bstar-video-card__title--normal bstar-video-card__title--bold"><a class="bstar-video-card__title-text" href="//www.bilibili.tv/en/play/34695?bstar_from=bstar-web.homepage.anime.all" target="_blank" style="--titleMaxLines:2;">The Daily Life of the Immortal King </a><!----></p><!--]--><!--]--><!--[--><div class="bstar-video-card__text-desc desc"><!----><!----><p class="bstar-video-card__desc bstar-video-card__desc--normal" style="--descMaxLines:2;"><!--[-->26.9M Views · Novel adaptation / Hot-blooded<!--]--></p></div><!----><!--]--></div></div></div></div></li><!--]--></ul><div style="" class="scroll-wrap__operate" data-v-66da88fd><button class="scroll-wrap__btn prev" disabled data-v-66da88fd><i class="scroll-wrap__btn__icon" data-v-66da88fd></i></button><button class="scroll-wrap__btn next" disabled data-v-66da88fd><i class="scroll-wrap__btn__icon" data-v-66da88fd></i></button></div></div><!----><!--[--><!--]--></section><section class="card-section" data-v-f7d052b0 data-v-4fdd08ee data-v-e09782c8><!--[--><div class="card-section--skeleton-header" data-v-e09782c8><div class="card-section--skeleton__title" data-v-e09782c8></div><!--[--><!----><!--]--></div><!--]--><ul class="section__list section__list--multi section__list--column" data-v-e09782c8><!--[--><!--]--></ul><!----><!--[--><div class="empty-container scroll-card-section__empty" style="display:none;" data-v-4fdd08ee data-v-be793ed9><img class="empty-container__img" src="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/empty_video-ab096eba.png" alt="empty" data-v-be793ed9><p data-v-be793ed9>No relevant results were found</p><!----></div><div class="scroll-loading" data-v-4fdd08ee data-v-666f2e0d><div class="scroll-loading__bottom" data-v-666f2e0d></div><!----></div><!--]--></section></div><!--]--></div></main></section><!----></div></div><span></span><!--]--></div>
+    
+    <script>window.__initialState=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q){return {global:{isDark:b,fallback:b,sLocale:"en",useBstation:b,largeScreen:b,uiMode:d},common:{configs:{can_buy_vip:e,survey:{enable:b,title:"Take a survey to win Grab coupons",link:"https:\u002F\u002Fsurvey.zohopublic.com\u002Fzs\u002FniD7dj?buvid=a9fbb02b-3867-4ffc-a7ba-7bf287dc8a1318588infoc&mid=0"},in_stream_ad:{tag_url:"https:\u002F\u002Fpubads.g.doubleclick.net\u002Fgampad\u002Fads?iu=%2F22889975060%2Fweb_video_ads&description_url=https%3A%2F%2Fwww.bilibili.tv%2Fen&tfcd=0&npa=0&sz=400x300%7C640x480&gdfp_req=1&unviewed_position_start=1&output=vast&env=vp&impl=s&correlator=&vad_type=linear&plcmt=1&vpmute=0&url=https%3A%2F%2Fgoogleads.github.io%2Fgoogleads-ima-html5%2Fvsi%2F",start_wait_timeout:3000,middle_wait_timeout:500,offline_ugc_web:b},hit_h5_block_exp:b},userInfo:{is_login:b,mid:a,nickname:a,avatar:a,sign:a,vip_info:c,birth:c,auth_type:d},isFetching:b,popupInfo:c,popupVisible:b,canSkipAdByVip:b},user:{updatedFollow:new Map([]),profileParams:{face:a,name:a,sign:a,birthday:a}},ogv:{epId:a,season:c,series:[],errorTagOgv:d,mediaLoading:b,showAdult:b,activeSectionTitle:a,sectionsList:[],favored:b},ugc:{aid:a,favored:b,hitAdBlack:b,archive:c,errorTagUgc:d,playlist:[],playlistInfo:{title:a,id:d}},home:{loading:{ugcTrending:e,ogvTrending:b,timeline:b},ugcTrending:[],ogvTrending:[{type:f,card_type:i,title:j,cover:k,view:l,dm:a,styles:a,style_list:[g,h],season_id:m,episode_id:a,index_show:"Update to EP 162",label:d,rank_info:c,view_history:c,watched:a,duration:a,view_at:a,pub_time_text:a,pub_time_ts:d,is_favored:b,unavailable:b},{type:f,card_type:i,title:"The Eminence in Shadow",cover:"https:\u002F\u002Fpic.bstarstatic.com\u002Fogv\u002F0293ea8f35e1751e31bbe1579f3494bbeb7840ce.png",view:"72.6M Views",dm:a,styles:a,style_list:[g,h],season_id:"1066507",episode_id:a,index_show:n,label:o,rank_info:c,view_history:c,watched:a,duration:a,view_at:a,pub_time_text:a,pub_time_ts:d,is_favored:b,unavailable:b,corner_mark:{text:p,left_icon:a,image:a,bg_color:q}},{type:f,card_type:i,title:"The Daily Life of the Immortal King ",cover:"https:\u002F\u002Fpic.bstarstatic.com\u002Fogv\u002F35a6ac1bb62f81988959fcbcb31a76895350ab5f.png",view:"26.9M Views",dm:a,styles:a,style_list:[g,h],season_id:"34695",episode_id:a,index_show:n,label:o,rank_info:c,view_history:c,watched:a,duration:a,view_at:a,pub_time_text:a,pub_time_ts:d,is_favored:b,unavailable:b,corner_mark:{text:p,left_icon:a,image:a,bg_color:q}}],timeline:[{day_of_week:"THU",is_today:b,date_text:"Oct 2",full_date_text:"2025-10-02",full_day_of_week:"Thursday",cards:c},{day_of_week:"FRI",is_today:b,date_text:"Oct 3",full_date_text:"2025-10-03",full_day_of_week:"Friday",cards:c},{day_of_week:"SAT",is_today:b,date_text:"Oct 4",full_date_text:"2025-10-04",full_day_of_week:"Saturday",cards:c},{day_of_week:"SUN",is_today:e,date_text:"Today",full_date_text:"2025-10-05",full_day_of_week:"Sunday",cards:c},{day_of_week:"MON",is_today:b,date_text:"Oct 6",full_date_text:"2025-10-06",full_day_of_week:"Monday",cards:[{type:f,card_type:"ogv_timeline",title:j,cover:k,view:l,dm:a,styles:a,style_list:[g,h],season_id:m,episode_id:"13678399",index_show:"E163 update 08:00",label:d,rank_info:c,view_history:c,watched:a,duration:a,view_at:a,pub_time_text:a,pub_time_ts:d,is_favored:b,unavailable:b}]},{day_of_week:"TUE",is_today:b,date_text:"Oct 7",full_date_text:"2025-10-07",full_day_of_week:"Tuesday",cards:c},{day_of_week:"WED",is_today:b,date_text:"Oct 8",full_date_text:"2025-10-08",full_day_of_week:"Wednesday",cards:c}],ugcTrendingFallback:e,ogvTrendingFallback:b,timelineFallback:b}}}("",false,null,0,true,"ogv","Novel adaptation","Hot-blooded","ogv_anime","A Record Of  Mortal's Journey To Immortality","https:\u002F\u002Fpic.bstarstatic.com\u002Fogv\u002F13ca8ef83d38aef13dad0e2cf537ad2f358c890d.png","39.3M Views","36571","Full",2,"BiliBili only","#06B6F2"))</script>
+    <!-- Google Tag Manager (noscript) -->
+    <!-- <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PT9X55H" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript> -->
+    <!-- End Google Tag Manager (noscript) -->
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/polyfills-legacy-0ffe263a.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="//p.bstarstatic.com/fe-static/bstar-web-new/client/assets/index-legacy-57c71dda.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
 </html>
